@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Virtual Family Book
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="">
+    </head>
+    <body>
+        <h1 class="Header" id="text1">My Family</h1>
+        <img class="Image" id="image1" src="BookletCover.jpg">
+        <br>
+        <h2 class="Name" id="text2"></h2>
+        <br>
+        <br>
+        <button class="Button" id="button1" onclick="Back()"><</button>
+        <button class="Button" id="button2" onclick="Next()">></button>
+    </body>
+    <script>
+        var namevariables = ["Afsin Hoque", "Mouhammed O. Hoque", "Farhana Akter", "Arlene Hoque", "Ayat Hoque"];
+        var image = [
+            "https://th.bing.com/th/id/R.48defe7fc302fa202873704f88b55655?rik=YDggD9eFpBFXVw&riu=http%3a%2f%2fclipart-library.com%2fimg1%2f990223.jpg&ehk=4KrTp%2bYciCpyUCC4CPnNNvEvIBiT3hU5plxDujAPiGQ%3d&risl=&pid=ImgRaw&r=0",
+            "https://th.bing.com/th/id/R.18d36f951a3b30577eb9502d22d0c48e?rik=LIvLTS6o2qLvEg&riu=http%3a%2f%2fimages.clipartpanda.com%2fdad-clipart-60a6a0b91fc2f2b03a035f7dfc3e57c5.jpg&ehk=%2bfKKoYvZ%2fO3QvovdZAI1hZc8dIgzX7jSs92Vdb%2fvx30%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+            "https://3.bp.blogspot.com/-kwy5fLuCQ7s/WWimerl6hRI/AAAAAAAAYEE/TFfkeDmHRME-GqV5ZRoa_N5KUKnSeiPlwCLcBGAs/s1600/cartoon-woman.jpg%2Bpng%2521.png%2B%2Bwith%2Bpink%2Btop.png%2Bblack%2Bpants.jpg",
+            "https://th.bing.com/th/id/OIP.Ekbt-HnZNa6sBZkeBOF47QAAAA?pid=ImgDet&rs=1",
+            "https://th.bing.com/th/id/R.aac03d0a550527996cf1f8ae2cc75752?rik=qW3lS4KAjyfEaQ&riu=http%3a%2f%2fsweetclipart.com%2fmultisite%2fsweetclipart%2ffiles%2fbaby_girl_1.png&ehk=i5%2frHesqpNLerWuC2GHIetBlC2fvdPLkjdX8hoRIFyo%3d&risl=&pid=ImgRaw&r=0",
+        ];
+
+        var i = 0
+
+        function Next() {
+            if (i == 5) {
+                i=0;
+            }
+            document.getElementById("text2").innerHTML = namevariables[i];
+            document.getElementById("image1").src = image[i];
+            i = i + 1;;
+        }
+
+        function Back() {
+            if (i == 0) {
+                i=5;
+            }
+            i = i - 1;
+            document.getElementById("text2").innerHTML = namevariables[i];
+            document.getElementById("image1").src = image[i];
+        }
+
+    </script>
+</html>

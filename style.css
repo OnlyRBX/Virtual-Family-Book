@@ -1,0 +1,32 @@
+html {
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.Image {
+    height:500px;
+    border-radius:10px;
+}
+
+.Button {
+    border-radius:100px;
+    font-size: 100px;
+    font-weight:bold; 
+}
+
+#button1 {
+    color: #6b0707;
+    background-color: rgb(163, 30, 30);
+}
+
+#button2 {
+    color: #33cc33;
+    background-color: chartreuse;
+}
